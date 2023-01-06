@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<link rel="stylesheet" href="style.css">
+ 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<title>ECode | Tech Idea</title>
+</head>
+<body>
+
+<!-- NAVBAR START -->	
+   
+   <ul id="navbar">
+    <li id="nav-logo">
+      <a>ECode</a>
+    </li>
+     <li class="nav-menu list"><a href="#more-about">Overview</a></li>
+     <li class="nav-menu list"><a href="#survey">Fill our Survey</a></li>
+    <li class="nav-menu"><a href="#home">Join our waitlist</a></li>
+    <span class="menu-btn" onclick="openNav()">&#9776;</span>
+ 
+
+  </ul>
+
+  <div class="sideNav" id="sidenav">
+    <a class="closeBtn" onclick="closeNav()">&#10006;</a>
+    <a href="#home">Home</a>
+    <a href="#more-about">Overview</a>
+    <a href="#survey">Fill our Survey</a>
+  <a href="#home">Join our waitlist</a>
+  </div>
+
+   
+
+<!--NAVBAR END-->
+
+
+<!-- HOME START -->
+
+<div id="home">
+ 
+  <div id="home-contain">	
+  	<div class="text">
+	<h1>Create, Code, Connect and Earn.</h1>
+	<p>Rule your world as a tech enthusiast with ECode.</p>
+	<a href="#more-about">Learn More</a>
+</div>
+	<img src="images/hero.png">
+</div>
+</div>
+
+<!-- HOME END -->
+
+<div id="more-about">
+
+<h1>ECode offers a more fun experience for tech enthusiasts.</h1>
+	
+<div id ="content-list">
+ 
+ <div class="content">
+  <img src="images/writing-icon.png">
+  <h4>Create Code Content</h4>
+  <p>
+    Create code courses like a pro, blog about it and also host coding challenges.
+  </p>
+ </div>
+
+ <div class="content">
+  <img src="images/code-icon.png">
+  <h4>Build Projects</h4>
+  <p>
+    Use our free and easy-to-use code editor to build live projects or copy and paste the link/upload from your storage.
+  </p>
+ </div>
+
+ <div class="content">
+  <img src="images/people-icon.png">
+  <h4>Connect with users worldwide</h4>
+  <p>
+   Interact and make friends with techies that meets your interest.
+  </p>
+ </div>
+
+ <div class="content">
+  <img src="images/earn-icon.png">
+  <h4>Monetize your profile</h4>
+  <p>
+    Become noticed by the community and stand the chance to earn through your followers' count, created content and projects built with our editor. Your impact matters!
+  </p>
+ </div>
+
+</div>
+
+</div>
+
+<!-- SURVEY SECTION -->
+
+<div id="survey">
+
+<h1>Tell Us What You Think About Our Product.</h1>
+  
+
+  <form class="form" action="#" method="POST">
+
+   <div class="first">  
+
+      <p class="name">
+        <input type="text" name="name" id="name" placeholder="John" required><br>
+        <span>First Name</span>
+
+      </p>
+
+      <p class="name">
+       <input type="text" name="name" id="name" placeholder="Doe" required><br>
+        <span>Last Name</span>
+      </p>
+
+       <p class="email">
+        <input type="email" name="email" id="email" placeholder="example@example.com" required><br>
+        <span>Email Address</span>
+
+      </p>
+
+      <p class="tel">
+       <input type="tel" name="tel" id="tel" placeholder="+234 09087630901" required><br>
+        <span>Please enter a valid phone number</span>
+      </p>
+  </div>
+
+
+
+
+
+<div class="radio">
+
+
+
+<span style="font-size:18px; "> 1) Do You Like Our Product?</span> <br>
+
+  <input type="radio" id="yes" name="polar-option" value="Yes">
+<label for="yes">Yes</label><br><br>
+ <input type="radio" id="yes" name="polar-option" value="No">
+<label for="no">No</label><br><br>
+
+
+
+
+<span> 2)What was your overall experience with our product
+ when you first used it?</span> <br>
+
+  <input type="radio" id="very-satisfied" name="satisfaction" value="Very Satisfied">
+<label for="very-satisfied">Very Satisfied</label><br><br>
+
+ <input type="radio" id="satisfied" name="satisfied" value="Satisfied">
+<label for="satisfied">Satisfied</label><br><br>
+
+<input type="radio" id="neutral" name="neutral" value="Neutral">
+<label for="neutral">Neutral</label><br><br>
+
+<input type="radio" id="dissatisfied" name="dissatisfied" value="Dissatisfied">
+<label for="dissatisfied">Dissatisfied</label><br><br>
+
+<input type="radio" id="very-dissatisfied" name="very-dissatisfied" value="Very Dissatisfied">
+<label for="very-dissatisfied">Very Dissatisfied</label><br><br>
+
+
+<span> 3) How long have you used our product?</span> <br>
+
+  <input type="radio" id="six" name="time" value="6 months or more">
+<label for="six">6 months or more</label><br><br>
+
+ <input type="radio" id="one-to-six" name="time" value="1 to 6 months">
+<label for="one-to-six">1 to 6 months</label><br><br>
+
+<input type="radio" id="less-than-one" name="time" value="Less than 1 month">
+<label for="less-than-one">Less than 1 month</label><br><br>
+
+<input type="radio" id="never" name="time" value="Never used">
+<label for="never">Never used</label> <br><br>
+
+
+
+
+<span> 4) Would you recommend our product to your friends? </span>
+
+  <input type="radio" id="yes" name="option" value="Yes">
+<label for="yes">Yes</label><br><br>
+ <input type="radio" id="no" name="option" value="No">
+<label for="no">No</label>
+
+
+</div>
+
+
+
+<div class="textarea">
+<br>
+      <br><br><span> 5) Have you had any problem with our product? Please specify.</span> <br>
+        <textarea name="text" placeholder="Type here..."></textarea>
+
+     
+ 
+
+
+      <br><br> <span>6)  If you could change something about our product, firstly what would it be? </span> 
+      <br>
+        <textarea name="text" placeholder="Type here..."></textarea>
+
+
+</div>    
+
+<div class="radio">
+
+
+<span> 7) Will you use our product again?</span> <br>
+
+  <input type="radio" id="yes" name="option" value="Yes">
+<label for="yes">Yes</label><br><br>
+ <input type="radio" id="no" name="option" value="No">
+<label for="no">No</label><br><br>
+
+
+
+<span> 8) How would you rate our product?</span> <br>
+
+ <input type="number" name="number" id="number" placeholder="Eg: 5" required><br>
+ <span style=" font-size: 13px; color:#888; font-family: Poppins, sans-serif; ">
+ Rate from 1 - 10</span>
+
+
+ 
+
+</div>
+ 
+
+
+
+      <input type="submit" value="Submit" id="submit">
+
+
+
+    </form>
+          <!-- end of form -->
+        
+</div>
+
+
+<!-- FOOTER SECTION -->
+
+<div class="footer">
+   <div class="copyright-text">
+    <p>&copy;All Rights Reserved 2023.</p>
+   </div>
+
+   <div class="made-by-text">
+     <p>Made by <a href="https://pudesdesignstudio.netlify.app/">Uduak Precious E.</a></p>
+   </div>
+
+</div>
+
+
+<script>
+  //navbar
+  function openNav(){
+  document.getElementById("sidenav").style.width="50%";
+}
+function closeNav(){
+  document.getElementById("sidenav").style.width="0%";
+}
+</script>
+
+
+</body>
+</html>

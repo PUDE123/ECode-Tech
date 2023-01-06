@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap'); 
+
+*{
+	box-sizing:border-box;
+}
+html, body{
+	margin:0;
+	padding:0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+ul#navbar{
+  background: rgba(242,242,242, 0.22);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+
+  padding:1em 5em 1em 5em;
+  margin:0;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ul#navbar li#nav-logo{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right:auto;
+}
+ul#navbar li#nav-logo a{
+  margin-left:10px;
+  font-size:25px;
+  font-family: Nunito, sans-serif;
+  font-weight: bold;
+  color:#fff;
+}
+ul#navbar li.nav-menu{ 
+  list-style-type: none;
+  margin-right:3em;
+  display:block;
+}
+ul#navbar li#nav-logo{
+  list-style-type: none;
+}
+ul#navbar li.nav-menu a{
+  background-color: white;
+  padding:10px;
+  font-size:14px;
+  color:#222;
+  border-radius:30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul#navbar li.list a{
+  color:white;
+  background: transparent;
+}
+ul#navbar li.nav-menu a:hover{
+ background-color:rgba(255, 255, 255, 0.5);
+ color:#fff;
+}
+
+ul#navbar span.menu-btn{
+  font-size: 20px;
+  font-weight: bolder;
+  color:#fff;
+  cursor: pointer;
+  display:none;
+}
+
+div.sideNav{
+  background-color: whitesmoke;
+  height:100%;
+position: fixed;
+width:0%;
+top:0;
+z-index:1;
+right:0;
+overflow-x: hidden;
+overflow-y: scroll;
+padding-top:60px;
+transition: all 0.5s ease;
+display:none;
+}
+div.sideNav a{
+  text-decoration: none;
+  padding:8px 8px 8px 40px;
+  color:rgb(55, 124, 246);
+  display:block;
+  transition: all 0.3s ease;
+  margin-bottom: 2em;
+  line-height:2em;
+}
+div.sideNav a:hover{
+  background-color:rgb(55, 124, 246) ;
+  color:#fff;
+}
+div.sideNav a.closeBtn{
+  position: absolute;
+  cursor: pointer;
+  top:10px;
+  right:25px;
+  font-size: 20px;
+  margin-left:50px;
+}
+
+
+
+/*navbar end*/
+
+
+/*hero start*/
+div#home{
+  width:100%;
+  height:auto;
+  padding:5em;
+  background-color:rgb(55,124,246);
+}
+div#home div#home-contain{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+div#home div#home-contain img{
+	margin-left:12em;
+	width:50%;
+	height:380px;
+
+}
+div#home div#home-contain h1{
+	margin:0;
+	font-family: Nunito, sans-serif;
+	font-size:3em;
+}
+div#home div#home-contain p{
+	font-size:1em;
+  margin-bottom: 30px;
+}
+div#home div#home-contain a{
+  background-color: white;
+  padding:10px 15px;
+  font-size:14px;
+  color:#222;
+  border-radius:30px;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+div#home div#home-contain a:hover, div#home div#home-contain a:active{
+ background-color:rgba(255, 255, 255, 0.5);
+ color:#fff;
+}
+
+
+/*HOME END*/
+
+
+/*MORE ABOUT START*/
+
+div#more-about{
+  padding:1em 5em;
+  background: rgba(55, 124, 246, 0.08);
+}
+div#more-about h1, div#survey h1{
+ font-family: Nunito, sans-serif;
+ text-align: center;
+ color:rgb(55, 124, 246);
+ margin-bottom: 2em;
+}
+div#more-about div#content-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+div#more-about  div.content{
+  margin-right:2em;
+  width:40%;
+  height:auto;
+  margin-bottom: 5em;
+}
+div#more-about  div.content img{
+
+  width:50px;
+  height:50px;
+}
+div#more-about  div.content h4{
+  font-family: Nunito, sans-serif;
+  font-size:1.2em;
+  color:rgb(55, 124, 246);
+}
+
+/*MORE ABOUT END*/
+
+
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+    SURVEY SECTION
+    */
+
+    div#survey{
+      padding:1em 5em;
+    }
+    div.first span{
+      font-size: 13px;
+      color:#888;
+    }
+    div#survey form p{
+      margin-right:2em;
+      margin-bottom:2em;
+    }
+    input{
+      width:100%;
+      height:auto;
+      padding:1em;
+      border-radius: 10px;
+      border:1px solid #888;
+      font-family: 'Poppins', sans-serif;
+    }
+    input:hover, input:focus, textarea:hover, textarea:focus{
+      border:1px solid rgb(55, 124, 246);
+      box-shadow:2px 2px 5px 3px rgba(55, 124, 246, 0.3);
+    }
+    input::placeholder{
+     font-family: 'Poppins', sans-serif;
+     color:rgba(0,0,0,0.5);
+
+   }
+   input#number{
+    width:20%;
+    height:auto;
+    padding:1em;
+  }
+  input#submit{
+    width:30%;
+    background: rgba(55, 124, 246, 0.5);
+    margin-top: 2em;
+    margin-bottom:2em;
+    color:white;
+    border:3px solid rgb(55, 124, 246);
+  }
+  textarea{
+    padding:10px;
+    font-family: 'Poppins', sans-serif;
+    width:60%;
+    max-width: 60%;
+    margin-top:10px; 
+    margin-bottom: 4em;
+    height:200px;
+    border:1px solid #888;
+    font-size: 15px;
+    line-height: 2.3em;
+    border-radius: 10px;
+  }
+div.first{
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  div.textarea span, div.radio span{
+    font-size:18px; 
+    color:rgb(55, 124, 246);
+     display:block;
+    margin-top: 2em;
+    font-family: Nunito, sans-serif;
+  }
+  div.textarea{
+    display:flex;
+    margin-top: 3em;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+  div.radio input{
+    width:15px;
+    height:15px;
+    box-shadow: none;
+    padding:0;
+
+  }
+  
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+    FOOTER SECTION
+    */
+    div.footer{
+      display:flex;
+      justify-content: center;
+      background-color:rgba(55, 124, 246, 0.9) ;
+      color:white;
+      padding:2px 5em;
+
+    }
+    div.footer div.copyright-text{
+      margin-right: auto;
+    }
+    div.footer a{
+      color:#fff;
+      text-decoration: underline;
+      font-weight: bold;
+
+    }
+
+    div.footer a:hover, div.footer a:active{
+      color:rgba(255, 255, 255, 0.5);
+    }
+
+
+
+    /*MEDIA QUERIES*/
+
+    @media (max-width: 1115px){
+      div#home div#home-contain{
+        flex-direction: column-reverse;
+      }
+      div#home div#home-contain img{
+        margin-left:0em;
+      }
+      div#home div#home-contain h1, p{
+        text-align: center;
+      }
+      div#home div#home-contain a{
+        display:block;
+        margin: 0 auto;
+        text-align: center;
+        width:30%;
+      }
+    }
+
+    @media (max-width: 1028px){
+      ul#navbar{
+        padding:1em 2em;
+      }
+      div#home div#home-contain img{
+        width:80%;
+        height:400px;
+      }
+      div#home div#home-contain h1{
+        font-size: 2em;
+      }
+      div#more-about{
+        padding:1em 2em;
+      }
+      div#survey{
+        padding:1em 2em;
+      }
+      div#footer{
+        padding:2px 2em;
+      }
+    }
+
+  @media (max-width:900px){
+    textarea{
+       width:100%;
+    max-width: 100%;
+    }
+  }
+
+    @media (max-width: 736px){
+       ul#navbar span.menu-btn{
+      display:block;
+    }
+    ul#navbar li.nav-menu{
+      display:none;
+    }
+    div.sideNav{
+      display:block;
+    }
+      div#home{
+        padding: 5em 2em;
+      }
+      div#home div#home-contain img{
+        width:100%;
+        height:400px;
+      }
+      div#more-about div#content-list{
+        flex-direction: column;
+      }
+      div#more-about  div.content{
+       width:100%;
+     }
+      input#number{
+    width:40%;
+  }
+     div.footer{
+      flex-direction: column;
+      padding:0em 2em;
+    }
+    div.footer div.copyright-text{
+      display: block;
+      margin: 0 auto;
+    }
+    div.footer div.made-by-text{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 500px){
+    ul#navbar{
+
+      padding:1em;
+    }
+    div#home div#home-contain img{
+      width:100%;
+      height:300px;
+    }
+    div#home div#home-contain a{
+      width:50%;
+    }
+    input#submit{
+      width:50%;
+    }
+  }
+
+
+  @media (max-width: 400px){
+
+    div#home div#home-contain img{
+      width:100%;
+      height:230px;
+    }
+    div#home  div#home-contain h1{
+      font-size: 1.5em;
+    }
+    div#more-about h1, div#survey h1{
+      font-size: 1.5em;
+    } 
+
+  }  
